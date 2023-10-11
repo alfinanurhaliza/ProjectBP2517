@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.bppraktikum02.HomeActivity
+import com.example.projectbp2517.HomeActivity
 import com.example.projectbp2517.R
 
 class LoginActivity : AppCompatActivity() {
@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
             //validasi login
             if(logModel.loginCek() == true){
                 //call home activity
-                val intentHome = Intent(this,HomeActivity::class.java)
+                val intentHome = Intent(this, HomeActivity::class.java)
                 startActivity(intentHome)
             }else{
                 Toast.makeText(this, "Username/Password salah", Toast.LENGTH_SHORT).show()
