@@ -18,6 +18,11 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, ActivityBookKidBinding::class.java)
             startActivity(intent)
         }
+        val btnMenu3:Button = findViewById(R.id.buttonMenu3)
+        btnMenu3.setOnClickListener{
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
         val rvBuku.RecyclerView = findViewById(R.id.recycleViewBuku)
         //set layout manager di recyclerview
         rvBuku.layoutManager = LinearLayoutManager(this)
